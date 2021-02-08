@@ -1502,11 +1502,10 @@ img {
     text-align: center;
   }
   .container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
   }
   .container-footer {
+    flex-wrap: wrap;
     display: flex;
   }
   .logo-footer {
