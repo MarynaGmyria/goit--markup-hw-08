@@ -7,17 +7,81 @@
   background-color: rgba(0, 0, 0, 0.1);
   transition: all 250ms linear;
 }
+@media screen and(max-width:767px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    width: 450px;
+    min-height: 609px;
+    background-color: var(--white-text-color);
+    padding: 40px;
+  }
+  .modal-form-policy-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  width: 528px;
-  min-height: 581px;
-  background-color: var(--white-text-color);
-  padding: 40px;
+    width: 450px;
+    min-height: 609px;
+    background-color: var(--white-text-color);
+    padding: 40px;
+  }
+  .modal-form-policy-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--white-text-color);
+    padding: 40px;
+  }
+  .modal-form-policy-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
 }
 
 .modal-form {
@@ -77,8 +141,8 @@
   transform: translateY(-50%);
   position: absolute;
   display: block;
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   transition: all 250ms var(--timing-function);
 
   .modal-form-input:focus + & {
@@ -178,19 +242,6 @@
   background-image: url(../images/for-sprite/tick.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.modal-form-policy-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  margin-bottom: 30px;
-  margin-top: 10px;
 }
 
 .modal-form-policy-link {

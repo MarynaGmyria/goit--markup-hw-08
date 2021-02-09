@@ -18,8 +18,8 @@
   .logo-footer {
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
+    font-size: 24px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     color: var(--white-text-color);
     text-decoration: none;
@@ -59,6 +59,7 @@
   .footer-social-item:not(:last-child) {
     margin-right: 10px;
   }
+
   .footer-social-link {
     display: flex;
     justify-content: center;
@@ -69,7 +70,24 @@
     color: var(--white-text-color);
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 200ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
+
+  .footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--white-text-color);
+
+    .footer-social-link:hover &,
+    .footer-social-link:focus & {
+      fill: var(--white-text-color);
+    }
+  }
+
   .follow-us {
     display: inline-block;
     margin-bottom: 20px;
@@ -366,5 +384,8 @@
 
   .subscription-form-btn-icon {
     margin-left: 10px;
+  }
+  .subscription-form-input-wrapper {
+    display: flex;
   }
 }
